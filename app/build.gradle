@@ -4,14 +4,14 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk buildConfig.compileSdk
 
     defaultConfig {
         applicationId "com.onboarding.app"
-        minSdk 19
-        targetSdk 32
+        minSdk buildConfig.minSdk
+        targetSdk buildConfig.targetSdk
         versionCode 1
-        versionName "1.0"
+        versionName app_version
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
